@@ -5,9 +5,10 @@
 [![Ethereum](https://img.shields.io/badge/Ethereum-Network-627EEA?logo=ethereum)](https://ethereum.org/)
 [![TRON](https://img.shields.io/badge/TRON-Blockchain-red)](https://tron.network/)
 [![BSC](https://img.shields.io/badge/BSC-BNB%20Chain-yellow)](https://www.bnbchain.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/Anthonykhayesaudsrx50512/Flash-USDT-Sender/blob/main/LICENSE
-
+[![License](https://img.shields.io/badge/License-MIT-green)]
 """
+
+
 ## ⚡ Flash-Sender v3.0 - Blockchain Simulation & Web3 Learning Tool
 
 ███████╗██╗      █████╗ ███████╗██╗  ██╗
