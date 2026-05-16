@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Flash-Sender v3.0 | Blockchain Simulation Lab</title>
+
+  <meta name="description" content="Educational blockchain transaction simulator for Ethereum, TRON, BSC, and Polygon networks.">
+  <meta name="keywords" content="blockchain simulator, web3, ethereum, tron, bsc, polygon, crypto education">
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#0d1117;
+      color:white;
+    }
+
+    header{
+      background:#161b22;
+      padding:20px;
+      text-align:center;
+      border-bottom:1px solid #30363d;
+    }
+
+    h1{
+      color:#58a6ff;
+    }
+
+    .container{
+      max-width:900px;
+      margin:auto;
+      padding:20px;
+    }
+
+    .card{
+      background:#161b22;
+      padding:20px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+
+    input, select{
+      width:100%;
+      padding:10px;
+      margin-top:10px;
+      background:#0d1117;
+      color:white;
+      border:1px solid #30363d;
+      border-radius:5px;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      margin-top:15px;
+      background:#238636;
+      border:none;
+      color:white;
+      font-size:16px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#2ea043;
+    }
+
+    #result{
+      margin-top:20px;
+      background:#0d1117;
+      padding:15px;
+      border-radius:5px;
+      border:1px solid #30363d;
+      white-space:pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Flash-Sender v3.0</h1>
+  <p>Educational Blockchain Simulation Tool</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+
+    <h2>Transaction Simulator</h2>
+
+    <input type="text" id="sender" placeholder="Sender Address">
+
+    <input type="text" id="receiver" placeholder="Receiver Address">
+
+    <select id="network">
+      <option>Ethereum (ERC20)</option>
+      <option>TRON (TRC20)</option>
+      <option>BSC (BEP20)</option>
+      <option>Polygon</option>
+    </select>
+
+    <input type="number" id="amount" placeholder="Amount">
+
+    <button onclick="simulate()">Simulate Transaction</button>
+
+    <div id="result">
+Waiting for simulation...
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+function simulate(){
+
+  const sender = document.getElementById("sender").value;
+  const receiver = document.getElementById("receiver").value;
+  const network = document.getElementById("network").value;
+  const amount = document.getElementById("amount").value;
+
+  const hash = "0x" + Math.random().toString(16).substring(2,66);
+
+  document.getElementById("result").innerText =
+`=== BLOCKCHAIN SIMULATION ===
+
+Network: ${network}
+
+Sender: ${sender}
+
+Receiver: ${receiver}
+
+Amount: ${amount}
+
+Transaction Hash:
+${hash}
+
+STATUS: SUCCESS (SIMULATION ONLY)
+
+NOTE:
+This is NOT a real blockchain transaction.
+`;
+
+}
+
+</script>
+
+</body>
+  </html>
