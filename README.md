@@ -80,15 +80,6 @@ This project is ideal for:
 - Smart contract researchers
 - IT infrastructure and network learners
 
-------------------------------------------------------------
-
-## 🖥️ HOW TO RUN
-
-WEB VERSION (Frontend Simulation):
-1. Open index.html in any browser
-2. Enter sender and receiver wallet addresses
-3. Select blockchain network
-4. Click "Simulate Transaction"
 
 ------------------------------------------------------------
 
